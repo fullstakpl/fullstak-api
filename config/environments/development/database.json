@@ -1,0 +1,17 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "postgres",
+        "database": "fullstak_development",
+        "host": "localhost",
+        "port": "5432",
+        "username": "postgres",
+        "password": "docker"
+      },
+      "options": {}
+    }
+  }
+}
