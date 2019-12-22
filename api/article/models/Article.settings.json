@@ -1,0 +1,57 @@
+{
+  "connection": "default",
+  "collectionName": "articles",
+  "info": {
+    "name": "article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "published": {
+      "type": "boolean"
+    },
+    "intro": {
+      "type": "string"
+    },
+    "youtubeId": {
+      "type": "string"
+    },
+    "anchorFm": {
+      "type": "string"
+    },
+    "permalink": {
+      "type": "string"
+    },
+    "category": {
+      "model": "category"
+    },
+    "user": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "restricted": {
+      "type": "boolean"
+    }
+  }
+}
