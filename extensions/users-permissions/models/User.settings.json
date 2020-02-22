@@ -1,6 +1,6 @@
 {
-  "collectionName": "users-permissions_user",
   "connection": "default",
+  "collectionName": "users-permissions_user",
   "info": {
     "name": "user",
     "description": ""
@@ -15,9 +15,7 @@
     "username": {
       "type": "string",
       "minLength": 3,
-      "unique": true,
-      "configurable": false,
-      "required": true
+      "configurable": false
     },
     "email": {
       "type": "email",
@@ -55,6 +53,13 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
+    },
+    "name": {
+      "type": "string"
+    },
+    "memberships": {
+      "collection": "membership",
+      "via": "user"
     }
   }
 }

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/biolinks",
+      "handler": "Biolink.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/biolinks/count",
+      "handler": "Biolink.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/biolinks/:id",
+      "handler": "Biolink.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/biolinks",
+      "handler": "Biolink.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/biolinks/:id",
+      "handler": "Biolink.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/biolinks/:id",
+      "handler": "Biolink.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

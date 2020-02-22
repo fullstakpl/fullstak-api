@@ -1,0 +1,42 @@
+{
+  "connection": "default",
+  "collectionName": "memberships",
+  "info": {
+    "name": "membership",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "status": {
+      "enum": [
+        "initialized",
+        "pending",
+        "active",
+        "inactive"
+      ],
+      "type": "enumeration"
+    },
+    "user": {
+      "model": "user",
+      "via": "memberships",
+      "plugin": "users-permissions"
+    },
+    "course": {
+      "model": "course",
+      "via": "memberships"
+    },
+    "createdAt": {
+      "type": "date"
+    },
+    "dueAt": {
+      "type": "date"
+    },
+    "paymentId": {
+      "type": "string"
+    }
+  }
+}

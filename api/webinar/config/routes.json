@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/webinars",
+      "handler": "Webinar.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/webinars/count",
+      "handler": "Webinar.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/webinars/:id",
+      "handler": "Webinar.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/webinars",
+      "handler": "Webinar.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/webinars/:id",
+      "handler": "Webinar.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/webinars/:id",
+      "handler": "Webinar.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

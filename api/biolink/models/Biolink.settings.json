@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "biolinks",
+  "info": {
+    "name": "biolink",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "views": {
+      "type": "integer"
+    },
+    "label": {
+      "type": "string"
+    },
+    "position": {
+      "type": "integer"
+    }
+  }
+}

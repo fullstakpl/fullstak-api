@@ -1,0 +1,37 @@
+{
+  "connection": "default",
+  "collectionName": "modules",
+  "info": {
+    "name": "module",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "course": {
+      "model": "course",
+      "via": "modules"
+    },
+    "lessons": {
+      "collection": "lesson",
+      "via": "module"
+    },
+    "cover": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    }
+  }
+}

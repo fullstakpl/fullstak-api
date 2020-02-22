@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "lessons",
+  "info": {
+    "name": "lesson",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "youtubeVideoId": {
+      "type": "string"
+    },
+    "video": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "length": {
+      "type": "integer"
+    },
+    "module": {
+      "model": "module",
+      "via": "lessons"
+    }
+  }
+}

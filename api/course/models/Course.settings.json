@@ -1,8 +1,8 @@
 {
   "connection": "default",
-  "collectionName": "articles",
+  "collectionName": "courses",
   "info": {
-    "name": "article",
+    "name": "course",
     "description": ""
   },
   "options": {
@@ -17,9 +17,6 @@
     "title": {
       "type": "string"
     },
-    "createdAt": {
-      "type": "date"
-    },
     "content": {
       "type": "richtext"
     },
@@ -28,30 +25,28 @@
       "via": "related",
       "plugin": "upload"
     },
-    "published": {
+    "open": {
       "type": "boolean"
     },
-    "intro": {
-      "type": "string"
+    "priceCents": {
+      "type": "integer"
     },
-    "youtubeId": {
-      "type": "string"
-    },
-    "anchorFm": {
-      "type": "string"
+    "openTill": {
+      "type": "date"
     },
     "permalink": {
       "type": "string"
     },
-    "category": {
-      "model": "category"
+    "PriceCurrency": {
+      "type": "string"
     },
-    "restricted": {
-      "type": "boolean"
+    "modules": {
+      "collection": "module",
+      "via": "course"
     },
-    "user": {
-      "model": "user",
-      "plugin": "users-permissions"
+    "memberships": {
+      "collection": "membership",
+      "via": "course"
     }
   }
 }
